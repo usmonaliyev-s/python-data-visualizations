@@ -16,7 +16,7 @@ sns.lineplot(data=df, x="date", y="rate", color='blue', linewidth=3)
 
 plt.title("Currency Rates")
 plt.xlabel("Date")
-plt.ylabel("Currency Rates")
+plt.ylabel("Currency Rates USD to UZS")
 
 ax = plt.gca()
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))

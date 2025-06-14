@@ -5,10 +5,6 @@ import matplotlib.pyplot as plt
 
 df = pl.read_csv("Databases/covid_19.csv")
 
-# print(df.head())
-# print(df.columns)
-# print(df.shape)
-
 uzbekistan_df = df.filter(pl.col("Country/Region") == "Uzbekistan")
 
 uzbekistan_df = uzbekistan_df.with_columns(
